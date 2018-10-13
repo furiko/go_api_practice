@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Todo {
+struct TodoEntity {
     var Id: Int
     var Name: String
-    
+    var Completed: Bool
+    var Time: Date
 }

@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DBA8965A646836CAF21151E /* Pods_GoAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4C4B34357BFA9D6360F301 /* Pods_GoAPI.framework */; };
 		CBE7FA7C217237CE006B2D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA7B217237CE006B2D07 /* AppDelegate.swift */; };
 		CBE7FA7E217237CE006B2D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA7D217237CE006B2D07 /* ViewController.swift */; };
 		CBE7FA81217237CE006B2D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7FA7F217237CE006B2D07 /* Main.storyboard */; };
 		CBE7FA83217237D0006B2D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE7FA82217237D0006B2D07 /* Assets.xcassets */; };
 		CBE7FA86217237D0006B2D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7FA84217237D0006B2D07 /* LaunchScreen.storyboard */; };
 		CBE7FA8F21723B53006B2D07 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA8E21723B53006B2D07 /* TodoEntity.swift */; };
+		CBE7FA9121723C1C006B2D07 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA9021723C1C006B2D07 /* API.swift */; };
+		CBE7FA9621724040006B2D07 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA9521724040006B2D07 /* TodoModel.swift */; };
+		CBE7FA982172404A006B2D07 /* TodoTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA972172404A006B2D07 /* TodoTranslator.swift */; };
+		CBE7FA9A2172406D006B2D07 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA992172406D006B2D07 /* TodoUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		378EF4B00EA60DF2D053FD1D /* Pods-GoAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoAPI/Pods-GoAPI.release.xcconfig"; sourceTree = "<group>"; };
+		5D4C4B34357BFA9D6360F301 /* Pods_GoAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F00296F63FB3F2DB0B45079 /* Pods-GoAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoAPI/Pods-GoAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		CBE7FA78217237CE006B2D07 /* GoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7FA7B217237CE006B2D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE7FA7D217237CE006B2D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		CBE7FA85217237D0006B2D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE7FA87217237D0006B2D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBE7FA8E21723B53006B2D07 /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		CBE7FA9021723C1C006B2D07 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CBE7FA9521724040006B2D07 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		CBE7FA972172404A006B2D07 /* TodoTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTranslator.swift; sourceTree = "<group>"; };
+		CBE7FA992172406D006B2D07 /* TodoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBA8965A646836CAF21151E /* Pods_GoAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				CBE7FA7A217237CE006B2D07 /* GoAPI */,
 				CBE7FA79217237CE006B2D07 /* Products */,
+				D064D8D60E740FCE1A56F8D1 /* Pods */,
+				DC86E10BD7A75141C1EFFDF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,9 @@
 		CBE7FA7A217237CE006B2D07 /* GoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CBE7FA9421724022006B2D07 /* Others */,
+				CBE7FA9321724019006B2D07 /* Presentation */,
+				CBE7FA9221724004006B2D07 /* Domain */,
 				CBE7FA8D21723B44006B2D07 /* Data */,
 				CBE7FA7B217237CE006B2D07 /* AppDelegate.swift */,
 				CBE7FA7D217237CE006B2D07 /* ViewController.swift */,
@@ -71,8 +89,50 @@
 			isa = PBXGroup;
 			children = (
 				CBE7FA8E21723B53006B2D07 /* TodoEntity.swift */,
+				CBE7FA9021723C1C006B2D07 /* API.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CBE7FA9221724004006B2D07 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CBE7FA9521724040006B2D07 /* TodoModel.swift */,
+				CBE7FA972172404A006B2D07 /* TodoTranslator.swift */,
+				CBE7FA992172406D006B2D07 /* TodoUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CBE7FA9321724019006B2D07 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CBE7FA9421724022006B2D07 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		D064D8D60E740FCE1A56F8D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F00296F63FB3F2DB0B45079 /* Pods-GoAPI.debug.xcconfig */,
+				378EF4B00EA60DF2D053FD1D /* Pods-GoAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC86E10BD7A75141C1EFFDF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C4B34357BFA9D6360F301 /* Pods_GoAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBE7FA8A217237D0006B2D07 /* Build configuration list for PBXNativeTarget "GoAPI" */;
 			buildPhases = (
+				851D43C77196B8281ED9A85B /* [CP] Check Pods Manifest.lock */,
 				CBE7FA74217237CE006B2D07 /* Sources */,
 				CBE7FA75217237CE006B2D07 /* Frameworks */,
 				CBE7FA76217237CE006B2D07 /* Resources */,
+				678C789DC435286AB6EC2D29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +203,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		678C789DC435286AB6EC2D29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoAPI/Pods-GoAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoAPI/Pods-GoAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851D43C77196B8281ED9A85B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBE7FA74217237CE006B2D07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,7 +259,11 @@
 			files = (
 				CBE7FA8F21723B53006B2D07 /* TodoEntity.swift in Sources */,
 				CBE7FA7E217237CE006B2D07 /* ViewController.swift in Sources */,
+				CBE7FA9121723C1C006B2D07 /* API.swift in Sources */,
+				CBE7FA9621724040006B2D07 /* TodoModel.swift in Sources */,
 				CBE7FA7C217237CE006B2D07 /* AppDelegate.swift in Sources */,
+				CBE7FA9A2172406D006B2D07 /* TodoUseCase.swift in Sources */,
+				CBE7FA982172404A006B2D07 /* TodoTranslator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +407,7 @@
 		};
 		CBE7FA8B217237D0006B2D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F00296F63FB3F2DB0B45079 /* Pods-GoAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +425,7 @@
 		};
 		CBE7FA8C217237D0006B2D07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 378EF4B00EA60DF2D053FD1D /* Pods-GoAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
