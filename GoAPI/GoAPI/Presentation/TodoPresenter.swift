@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class TodoPresenter {
+    
+    let useCase: TodoUseCase
+    let view: TodoView
+    
+    init(useCase: TodoUseCase = TodoUseCase(), view: TodoView) {
+        self.useCase = useCase
+        self.view = view
+    }
+    
+    func printTodo() {
+        useCase.getTodo(successAction: { todo in
+            self.view.printTodo(todo)
+        }, errorAction: { error in
+            self.view.errorHandler(error)
+        })
+    }
+}

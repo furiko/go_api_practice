@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class AppConstant {
+    struct api {
+        static let url = "localhost:8080"
+        static func createUrl() -> String{
+            return url
+        }
+    }
+}

@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class TodoTranslator {
+    static func translator(_ todoEntity: TodoEntity) -> TodoModel {
+        return TodoModel(
+            Id: todoEntity.Id,
+            Name: todoEntity.Name,
+            Completed: todoEntity.Completed,
+            Time: todoEntity.Time
+        )
+    }
+}

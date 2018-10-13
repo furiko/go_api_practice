@@ -20,6 +20,7 @@
 		CBE7FA9A2172406D006B2D07 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA992172406D006B2D07 /* TodoUseCase.swift */; };
 		CBE7FA9C217240CD006B2D07 /* TodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA9B217240CD006B2D07 /* TodoPresenter.swift */; };
 		CBE7FA9E217240E7006B2D07 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA9D217240E7006B2D07 /* AppConstant.swift */; };
+		CBE7FAA02172797C006B2D07 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7FA9F2172797C006B2D07 /* TodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CBE7FA992172406D006B2D07 /* TodoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 		CBE7FA9B217240CD006B2D07 /* TodoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoPresenter.swift; sourceTree = "<group>"; };
 		CBE7FA9D217240E7006B2D07 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		CBE7FA9F2172797C006B2D07 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CBE7FA7D217237CE006B2D07 /* ViewController.swift */,
 				CBE7FA7F217237CE006B2D07 /* Main.storyboard */,
 				CBE7FA9B217240CD006B2D07 /* TodoPresenter.swift */,
+				CBE7FA9F2172797C006B2D07 /* TodoView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				CBE7FA9E217240E7006B2D07 /* AppConstant.swift in Sources */,
 				CBE7FA8F21723B53006B2D07 /* TodoEntity.swift in Sources */,
+				CBE7FAA02172797C006B2D07 /* TodoView.swift in Sources */,
 				CBE7FA7E217237CE006B2D07 /* ViewController.swift in Sources */,
 				CBE7FA9121723C1C006B2D07 /* API.swift in Sources */,
 				CBE7FA9621724040006B2D07 /* TodoModel.swift in Sources */,

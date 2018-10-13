@@ -11,18 +11,21 @@ import Alamofire
 import SwiftyJSON
 
 class API {
-    func get() -> TodoEntity {
-        Alamofire.request("localhost:8080").validate().responseJSON() {
+    static func getTodo(successHandler: @escaping (_ todoEntity: TodoEntity) -> Void, errorHandler: @escaping (_ error: Error) -> Void) {
+        //localhostだとrequestがうまくいかない
+        Alamofire.request("https://api.github.com/repos/furiko/go_api_practice").validate().responseJSON() {
             response in
             switch(response.result) {
             case .failure(let error):
                 print(error)
-            case .success(let data):
-                print(data)
+                errorHandler(error)
+            case .success(let _):
+//                print(data)
+                let todo = TodoEntity(Id: 1, Name: "test", Completed: false, Time: NSDate() as Date)
+                successHandler(todo)
             }
         }
 
-        let todo = TodoEntity(Id: 1, Name: "test", Completed: false, Time: NSDate() as Date)
-        return  todo
+
     }
 }
