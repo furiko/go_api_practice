@@ -21,6 +21,7 @@ class API {
                 errorHandler(error)
             case .success(let _):
 //                print(data)
+                print("API")
                 let todo = TodoEntity(Id: 1, Name: "test", Completed: false, Time: NSDate() as Date)
                 successHandler(todo)
             }

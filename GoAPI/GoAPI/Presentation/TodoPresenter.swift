@@ -20,6 +20,7 @@ class TodoPresenter {
     
     func printTodo() {
         useCase.getTodo(successAction: { todo in
+            print("presenter printTodo")
             self.view.printTodo(todo)
         }, errorAction: { error in
             self.view.errorHandler(error)
