@@ -15,9 +15,10 @@ struct TodoEntity {
     var Completed: Bool
     var Time: String
     
-    /*init(object: JSON) {
-        self.Name = object["name"].stringValue
-        self.Id = object["id"].intValue
-        self.Completed = object["completed"].boolValue
-    }*/
+    init(object: (String,JSON)) {
+        self.Name = object.1["name"].stringValue
+        self.Id = object.1["id"].intValue
+        self.Completed = object.1["completed"].boolValue
+        self.Time = object.1["due"].stringValue
+    }
 }
