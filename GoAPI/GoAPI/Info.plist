@@ -41,5 +41,21 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict/>
+		<key>localhost:8080</key>
+		<dict>
+			<key>NSIncludeSubdomains</key>
+			<string></string>
+			<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+			<string></string>
+			<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
+			<string></string>
+		</dict>
+	</dict>
 </dict>
 </plist>

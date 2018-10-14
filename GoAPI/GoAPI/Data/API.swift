@@ -13,7 +13,8 @@ import SwiftyJSON
 class API {
     static func getTodo(successHandler: @escaping (_ todoEntity: TodoEntity) -> Void, errorHandler: @escaping (_ error: Error) -> Void) {
         //localhostだとrequestがうまくいかない
-        Alamofire.request("https://api.github.com/repos/furiko/go_api_practice").validate().responseJSON() {
+//        "http://localhost:8080"
+        Alamofire.request("http://localhost:8080/todos"/*"https://api.github.com/repos/furiko/go_api_practice"*/).validate().responseJSON() {
             response in
             switch(response.result) {
             case .failure(let error):
