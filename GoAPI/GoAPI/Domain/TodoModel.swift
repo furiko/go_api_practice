@@ -12,7 +12,7 @@ struct TodoModel {
     let Id: Int
     let Name: String
     let Completed: Bool
-    var Time: Date
+    var Time: String
     /*func todolist() ->  {
         
     }*/

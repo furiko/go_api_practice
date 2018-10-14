@@ -10,7 +10,7 @@ import Foundation
 
 class AppConstant {
     struct api {
-        static let url = "localhost:8080"
+        static let url = "http://localhost:8080/todos"
         static func createUrl() -> String{
             return url
         }

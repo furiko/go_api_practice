@@ -9,12 +9,16 @@
 import Foundation
 
 class TodoTranslator {
-    static func translator(_ todoEntity: TodoEntity) -> TodoModel {
-        return TodoModel(
-            Id: todoEntity.Id,
-            Name: todoEntity.Name,
-            Completed: todoEntity.Completed,
-            Time: todoEntity.Time
-        )
+    static func translator(_ todoEntities: [TodoEntity]) -> [TodoModel] {
+        var todos = [TodoModel]()
+        for todoEntity in todoEntities {
+            todos.append(TodoModel(
+                Id: todoEntity.Id,
+                Name: todoEntity.Name,
+                Completed: todoEntity.Completed,
+                Time: todoEntity.Time
+            ))
+        }
+        return todos
     }
 }

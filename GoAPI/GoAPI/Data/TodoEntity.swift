@@ -7,10 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 struct TodoEntity {
     var Id: Int
     var Name: String
     var Completed: Bool
-    var Time: Date
+    var Time: String
+    
+    /*init(object: JSON) {
+        self.Name = object["name"].stringValue
+        self.Id = object["id"].intValue
+        self.Completed = object["completed"].boolValue
+    }*/
 }

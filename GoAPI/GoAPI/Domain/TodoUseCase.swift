@@ -9,10 +9,10 @@
 import Foundation
 
 class TodoUseCase {
-    func getTodo(successAction: @escaping (_ model: TodoModel) -> Void, errorAction:     @escaping (Error) -> Void) {
-        API.getTodo(successHandler: { entity in
+    func getTodo(successAction: @escaping (_ models: [TodoModel]) -> Void, errorAction: @escaping (Error) -> Void) {
+        API.getTodo(successHandler: { entities in
             print("UseCase")
-            successAction(TodoTranslator.translator(entity))
+            successAction(TodoTranslator.translator(entities))
         }, errorHandler: { error in
             errorAction(error)
         })

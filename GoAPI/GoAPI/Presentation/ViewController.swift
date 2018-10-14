@@ -43,13 +43,13 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: TodoView {
 
-    func printTodo(_ todo: TodoModel) {
+    func printTodo(_ todos: [TodoModel]) {
         print("ViewController printTodo")
-        print(todo.Id)
+/*        print(todo.Id)
         print(todo.Name)
-        print(todo.Time)
+        print(todo.Time)*/
 //        todos?.append(todo)
-        todos.append(todo)
+        self.todos += todos
         
         print(todos)
         tableView.reloadData() //API通信終了後tableViewをリロード

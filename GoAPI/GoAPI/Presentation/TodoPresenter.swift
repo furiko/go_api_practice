@@ -19,9 +19,9 @@ class TodoPresenter {
     }
     
     func printTodo() {
-        useCase.getTodo(successAction: { todo in
+        useCase.getTodo(successAction: { todos in
             print("presenter printTodo")
-            self.view.printTodo(todo)
+            self.view.printTodo(todos)
         }, errorAction: { error in
             self.view.errorHandler(error)
         })

@@ -9,6 +9,6 @@
 import Foundation
 
 protocol TodoView {
-    func printTodo(_ todo: TodoModel)
+    func printTodo(_ todos: [TodoModel])
     func errorHandler(_ error: Error)
 }
